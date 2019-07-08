@@ -5,7 +5,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("demo"),
+        title: Text("chuck"),
         actions: <Widget>[
           IconButton(
             // action button
@@ -78,8 +78,26 @@ class Home extends StatelessWidget {
               ])
         ]),
       ),
-      body: Text('body'),
-      floatingActionButton: Text('foot'),
+      body: ListView(
+        children: <Widget>[
+          Text('body'),
+        ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.home),
+        onPressed: () {
+          print('FloatingActionButton');
+        },
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+              icon: Icon(Icons.category), title: Text("我的")),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.bubble_chart), title: Text("消息")),
+          BottomNavigationBarItem(icon: Icon(Icons.settings), title: Text("设置"))
+        ],
+      ),
     );
   }
 }
