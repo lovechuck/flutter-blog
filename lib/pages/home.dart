@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_swiper/flutter_swiper.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -80,6 +81,19 @@ class Home extends StatelessWidget {
       ),
       body: ListView(
         children: <Widget>[
+          Container(
+              height: 200.0,
+              child: Swiper(
+                itemBuilder: (BuildContext context, int index) {
+                  return Image.asset(
+                    "images/slider_pic" + (index + 1).toString() + ".jpg",
+                    fit: BoxFit.fill,
+                  );
+                },
+                itemCount: 5,
+                pagination: SwiperPagination(),
+                autoplay: true,
+              )),
           Text('body'),
         ],
       ),
