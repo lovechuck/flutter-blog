@@ -82,19 +82,195 @@ class Home extends StatelessWidget {
       body: ListView(
         children: <Widget>[
           Container(
-              height: 200.0,
-              child: Swiper(
-                itemBuilder: (BuildContext context, int index) {
-                  return Image.asset(
-                    "images/slider_pic" + (index + 1).toString() + ".jpg",
-                    fit: BoxFit.fill,
-                  );
-                },
-                itemCount: 5,
-                pagination: SwiperPagination(),
-                autoplay: true,
-              )),
-          Text('body'),
+            height: 200.0,
+            child: Swiper(
+              itemBuilder: (BuildContext context, int index) {
+                return Image.asset(
+                  "images/slider_pic" + (index + 1).toString() + ".jpg",
+                  fit: BoxFit.fill,
+                );
+              },
+              itemCount: 5,
+              pagination: SwiperPagination(),
+              autoplay: true,
+            ),
+          ),
+          Container(
+            padding: EdgeInsets.all(10),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Container(
+                  margin: EdgeInsets.only(bottom: 10),
+                  child: Text(
+                    "some of our top services",
+                    style: TextStyle(color: Colors.black, fontSize: 20),
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.only(bottom: 10),
+                  child: Text(
+                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+                    style: TextStyle(color: Colors.black54),
+                  ),
+                ),
+                Container(
+                  alignment: Alignment.centerRight,
+                  child: IconButton(
+                    icon: Icon(Icons.more),
+                    onPressed: () => {},
+                  ),
+                )
+              ],
+            ),
+          ),
+          Container(
+            padding: EdgeInsets.all(10),
+            child: Column(
+              children: <Widget>[
+                Container(
+                  child: Column(
+                    children: <Widget>[
+                      Container(
+                        height: 50,
+                        child: Text(
+                          "01",
+                          overflow: TextOverflow.clip,
+                          style: TextStyle(
+                            fontSize: 85,
+                            color: Color(0xFFf1cd69),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        child: Text(
+                          "01",
+                          style: TextStyle(fontSize: 20),
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(bottom: 10),
+                        child: Text(
+                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"),
+                      ),
+                      Container(
+                        child: RaisedButton(
+                          child: Text("More"),
+                          color: Colors.red,
+                          onPressed: () => {},
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  child: Column(
+                    children: <Widget>[
+                      Container(
+                        height: 50,
+                        child: Text(
+                          "01",
+                          overflow: TextOverflow.clip,
+                          style: TextStyle(
+                            fontSize: 85,
+                            color: Color(0xFFf1cd69),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        child: Text(
+                          "01",
+                          style: TextStyle(fontSize: 20),
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(bottom: 10),
+                        child: Text(
+                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"),
+                      ),
+                      Container(
+                        child: RaisedButton(
+                          child: Text("More"),
+                          color: Colors.red,
+                          onPressed: () => {},
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  child: Column(
+                    children: <Widget>[
+                      Container(
+                        height: 50,
+                        child: Text(
+                          "01",
+                          overflow: TextOverflow.clip,
+                          style: TextStyle(
+                            fontSize: 85,
+                            color: Color(0xFFf1cd69),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        child: Text(
+                          "01",
+                          style: TextStyle(fontSize: 20),
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(bottom: 10),
+                        child: Text(
+                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"),
+                      ),
+                      Container(
+                        child: RaisedButton(
+                          child: Text("More"),
+                          color: Colors.red,
+                          onPressed: () => {},
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  child: Column(
+                    children: <Widget>[
+                      Container(
+                        height: 50,
+                        child: Text(
+                          "01",
+                          overflow: TextOverflow.clip,
+                          style: TextStyle(
+                            fontSize: 85,
+                            color: Color(0xFFf1cd69),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        child: Text(
+                          "01",
+                          style: TextStyle(fontSize: 20),
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(bottom: 10),
+                        child: Text(
+                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"),
+                      ),
+                      Container(
+                        child: RaisedButton(
+                          child: Text("More"),
+                          color: Colors.red,
+                          onPressed: () => {},
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          )
         ],
       ),
       floatingActionButton: FloatingActionButton(
